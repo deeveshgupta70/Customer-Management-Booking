@@ -18,7 +18,7 @@ const EmpEdit = () => {
         }).catch((err) => {
             console.log(err.message);
         })
-    }, []);
+    }, [empid]);
 
     const[id,idchange]=useState("");
     const[name,namechange]=useState("");
@@ -73,7 +73,7 @@ const EmpEdit = () => {
                                     <div className="form-group">
                                         <label>Name</label>
                                         <input required value={name} onMouseDown={e=>valchange(true)} onChange={e=>namechange(e.target.value)} className="form-control"></input>
-                                    {name.length==0 && validation && <span className="text-danger">Enter the name</span>}
+                                    {name.length===0 && validation && <span className="text-danger">Enter the name</span>}
                                     </div>
                                 </div>
 

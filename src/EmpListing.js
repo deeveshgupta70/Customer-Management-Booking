@@ -65,9 +65,9 @@ const EmpListing = () => {
                                         <td>{item.name}</td>
                                         <td>{item.email}</td>
                                         <td>{item.phone}</td>
-                                        <td><a onClick={() => { LoadEdit(item.id) }} className="btn btn-success">Edit</a>
-                                            <a onClick={() => { Removefunction(item.id) }} className="btn btn-danger">Remove</a>
-                                            <a onClick={() => { LoadDetail(item.id) }} className="btn btn-primary">Details</a>
+                                        <td><a href = "/" onClick={() => { LoadEdit(item.id) }} className="btn btn-success">Edit</a>
+                                            <a href = "/" onClick={() => { Removefunction(item.id) }} className="btn btn-danger">Remove</a>
+                                            <a href = "/" onClick={() => { LoadDetail(item.id) }} className="btn btn-primary">Details</a>
                                         </td>
                                     </tr>
                                 ))
